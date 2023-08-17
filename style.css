@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #181A1B;
+}
+
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 20pt;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0D0E0E;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  
+}
+
+.sidenav a {
+
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  padding: 30px;
+  font-size: 20pt; 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration-color: white;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+}
+
+.form {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 100px;
+  font-family: didot;
+
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+.copy-button {
+  background-color: green;
+  padding: 5px;
+  width: auto;
+  color: white;
+  font-size: 20pt;
+  font-family: didot;
+
+}
+
+#btn {
+  position: relative;
+  right: 35px;
+  background-color: green;
+  padding: 10px;
+  width: 350px;
+  margin-top: 10px;
+  color: white;
+  font-family: didot;
+  font-size: 20pt;
+}
+
+#pass {
+  padding: 10px;
+  font-size: 20pt; 
+}
+
+.checkboxes {
+  padding: 60px;
+  color: white;
+
+}
+
+#generate {
+  text-align: center;
+  padding: 30px;
+}
+
+#number {
+  width: 80px; 
+  font-size: 20pt;
+}
