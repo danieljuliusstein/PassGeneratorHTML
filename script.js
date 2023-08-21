@@ -12,7 +12,7 @@ function copy_func() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
-  alert("Copied the text");
+  
 }
 
 function generate_func() {
