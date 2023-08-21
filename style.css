@@ -1,103 +1,122 @@
+/* Global styles */
 html {
   height: 100%;
   width: 100%;
-  background-color: #181A1B;
 }
 
-.main {
-  margin-left: 200px;
-  /* Same as the width of the sidenav */
-  font-size: 20pt;
-}
-
-.sidenav {
+body {
+  font-family: 'Rubik', sans-serif;
   height: 100%;
-  width: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Sidebar styles */
+.sidenav {
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
+  width: 200px;
+  height: 100%;
   background-color: #0D0E0E;
-  overflow-x: hidden;
-  padding-top: 20px;
   color: white;
   text-align: center;
-  
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.sidenav a {
 
+.sidenav a {
   text-decoration: none;
   color: #818181;
   display: block;
   padding: 30px;
-  font-size: 20pt; 
 }
 
+.sidenav a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* visited link */
+.sidenav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* mouse over link */
 .sidenav a:hover {
-  color: #f1f1f1;
+  text-decoration: none;
+  color: green;
 }
 
-.topnav a {
-  padding: 14px 16px;
-  text-decoration-color: white;
+/* selected link */
+.sidenav a:active {
+  text-decoration: none;
+  color: #121723;
+}
+
+/* Main content styles */
+.main {
+  margin-left: 200px;
+  font-size: 20pt;
+
+
 }
 
 .title {
-  text-align: center;
-  color: white;
-  padding-top: 120px;
+  margin-top: 50px;
 }
 
-.form {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 100px;
-  font-family: didot;
+/* Form styles */
+.form {}
 
-}
-::-webkit-input-placeholder {
-  text-align: center;
-}
+/* Copy button styles */
 .copy-button {
   background-color: green;
   padding: 5px;
-  width: auto;
+  margin-top: 50px;
   color: white;
   font-size: 20pt;
-  font-family: didot;
-
 }
 
+/* Generate button styles */
 #btn {
   position: relative;
-  right: 35px;
   background-color: green;
   padding: 10px;
   width: 350px;
   margin-top: 10px;
   color: white;
-  font-family: didot;
   font-size: 20pt;
 }
 
+/* Password input styles */
 #pass {
-  padding: 10px;
-  font-size: 20pt; 
-}
-
-.checkboxes {
-  padding: 60px;
-  color: white;
-
-}
-
-#generate {
-  text-align: center;
-  padding: 30px;
-}
-
-#number {
-  width: 80px; 
+  margin-top: 50px;
   font-size: 20pt;
+}
+
+/* Checkboxes styles */
+.checkboxes {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Number input styles */
+#number {
+  width: 100px;
+  text-align: center;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  margin-bottom: -2px;
+  margin-right: 10px;
+  justify-content: space-evenly;
 }
