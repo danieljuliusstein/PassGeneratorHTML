@@ -14,21 +14,22 @@
 <body>
   <div class="main">
     <div class="sidenav">
-      <p>Hello ____! </p>
+      <a href="signup.html"></a>
       <a href="index.html"><img src="images/home.png">Home</a>
       <a href="profile.html"><img src="images/user.png">Profile</a>
       <a href="settings.html"><img src="images/setting.png">Settings</a>
+
     </div>
     <div class="title">
       <h1>Password Generator</h1>
     </div>
     <div class="form">
-      <form action="processForm.php" method="post">
-        <label for="pass">Password:</label>
+      <form action="processForm.php" method="get">
+        <label for="pass"></label>
         <input type="text" id="pass" placeholder="password" name="pass">
         <button onclick="copy_func()" class="copy-button">Copy</button><br>
         <div class="checkboxes">
-          <label for="number">Length:</label>
+          <label for="number"></label>
           <input type="text" id="number" placeholder="length" min="0" max="1,000" name="number"><br>
           <label for="accept">
             <input type="checkbox" id="accept" value="lowercase"> Lowercase
@@ -40,7 +41,7 @@
             <input type="checkbox" id="accept2" value="symbols"> Symbols
           </label><br>
           <label for="accept3">
-            <input type="checkbox" id="accept3" value="numbers"> Numbers
+            <input type="checkbox" id="accept3" value="numbers" z> Numbers
           </label><br>
         </div>
         <button onclick="generate_func()" id="btn" type="submit">Generate</button>
